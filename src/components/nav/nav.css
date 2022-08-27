@@ -1,0 +1,23 @@
+.nav__container{
+    display: flex;
+    flex-direction: column 2;
+    border-radius: -5rem;
+    font-variant: small-caps;
+    justify-content: right;
+}
+
+/* .nav__logo {
+    justify-items: left;
+    background-color: var(--color-bg);
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+    overflow: visible;
+} */
+
+.nav__navigation{
+    background-color: var(--color-secundary);
+    display: flex;
+    flex-direction: column 2;
+    gap:30rem;
+}

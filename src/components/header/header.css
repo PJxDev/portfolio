@@ -1,0 +1,80 @@
+header {
+  height: 100vh;
+  padding-top: 6rem;
+  overflow: hidden;
+}
+
+.header__container {
+  position: relative;
+  height: 100%;
+  text-align: center;
+}
+
+.header__buttons {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.header__socials {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  right: 0;
+  top: 0.3rem;
+}
+
+#header__linkedin,
+#header__github {
+  transition: var(--transition);
+}
+#header__linkedin {
+  color: rgb(15, 96, 189);
+}
+
+#header__linkedin:hover,
+#header__github:hover {
+  color: var(--color-secundary-variant);
+}
+
+/* .header__buttons{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left:16rem;
+  top: 16rem;
+} */
+
+
+i{
+  position: relative;
+  top: 0.13rem;
+  right:0.2rem
+}
+
+.header__img {
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow:hidden;
+}
+
+header h3 {
+  font-family: copper;
+  color: var(--color-secundary)
+}
+
+header h2 {
+    font-size: 3rem;
+}
+
+header h1{
+    margin-top: 32rem;
+}
