@@ -18,6 +18,7 @@
 .about__main{
     display: grid;
     gap:2rem;
+    padding-top: 2rem;
 
 }
 
@@ -34,7 +35,7 @@
     grid-column: 4;
     font-size: 1.6rem;
     font-weight: 500;
-    margin-right: 10rem;
+    margin-right: 5rem;
 }
 
 .about__button {
@@ -42,7 +43,7 @@
     font-size: 1.2rem;
     grid-column: 4;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .about__button > .btn {
