@@ -1,17 +1,19 @@
 header {
   height: 100vh;
-  padding-top: 6rem;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .header__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   text-align: center;
 }
 
 .header__buttons {
   display: flex;
+  flex-flow: column;
   margin-top: 1rem;
   gap: 1.2rem;
   justify-content: center;
@@ -41,40 +43,39 @@ header {
   color: var(--color-secundary-variant);
 }
 
-/* .header__buttons{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  left:16rem;
-  top: 16rem;
-} */
-
-
-i{
+i {
   position: relative;
   top: 0.13rem;
-  right:0.2rem
+  right: 0.2rem;
 }
 
 .header__img {
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 2rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow:hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.header__img img{
+  justify-items: center;
+  width: 16rem;
+  height: 22rem;
+  border-radius: 12rem 12rem 0 0;
+  /*overflow: hidden;*/
+  
 }
 
 header h3 {
   font-family: copper;
-  color: var(--color-secundary)
+  color: var(--color-secundary);
 }
 
 header h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-header h1{
-    margin-top: 32rem;
+header h1 {
+  position: relative;
+  margin-top: 0rem;
 }

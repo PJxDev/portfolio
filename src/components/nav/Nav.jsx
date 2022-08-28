@@ -1,10 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import "./nav.css";
 
 const EnFlag = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/1999/xlink"
     width="38"
     height="38"
     viewBox="0 0 38 38"
@@ -88,16 +88,13 @@ const EnFlag = (
 
 const Nav = () => {
   return (
-    <nav>
+    <nav >
       <div className="container nav__container">
-        {/* <div className="nav__logo">
-          <span>PJDev</span>
-        </div> */}
         <div className="nav__navigation">
-          <div>
+          <div className="nav__logo">
             <span>PJDev</span>
           </div>
-          <div>  
+          <div className="nav__enlaces">  
             <a href="#">Inicio</a>
             <a href="#about">Sobre mí</a>
             <a href="#contact">Contacto</a>
