@@ -1,0 +1,59 @@
+#about{
+    background: var(--color-secundary);
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-bg);
+    grid-template-columns: 5% 42% 5% 43% 5%;
+    padding-bottom: 3rem;
+}
+
+.about__container h1{
+    text-align: center;
+    color: var(--color-bg);
+}
+
+.about__main{
+    display: grid;
+    gap:2rem;
+
+}
+
+.about__main img{
+    margin:0 auto;
+    grid-column: 2;
+    border: 1rem solid white;
+    width: 25rem;
+}
+
+.about__text {
+    display:flex;
+    flex-direction: column;
+    grid-column: 4;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 10rem;
+}
+
+.about__button {
+    display: flex;
+    font-size: 1.2rem;
+    grid-column: 4;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.about__button > .btn {
+    background:var(--color-bg);
+    color: var(--color-secundary);
+}
+
+.about__button > .btn:hover {
+    color: var(--color-bg);
+}
+
+.about__button i{
+    color: var(--color-secundary);
+}

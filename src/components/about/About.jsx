@@ -1,14 +1,15 @@
 import React from "react";
 import "./about.css";
 import Me2 from "../../assets/imgs/img2.jpg";
+import ButtonMail from "../buttons/ButtonMail";
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <div className="container about__container">
         <h1>Sobre mí</h1>
         <div className="about__main">
-          <img src={Me2} alt="me computing" />
+          <img src={Me2} alt="Me computing" />
           <div className="about__text">
             <p>Nací en Málaga con dos pasiones: la música y la programación.</p>
             <p>
@@ -16,8 +17,10 @@ const About = () => {
               Aplicaciones Web, mientras que al mismo tiempo, me dedico a
               investigar y a aprender nuevas tecnologías
             </p>
+            <div className="about__button">
+              <ButtonMail />
+            </div>
           </div>
-          <button></button>
         </div>
       </div>
     </section>

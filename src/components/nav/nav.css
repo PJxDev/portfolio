@@ -1,20 +1,18 @@
 nav {
-    position:sticky;
-    top: 0;
-    /*justify-content: flex-start;*/
-    z-index: 1;
-  }
-
-.nav__container {
-  display: inline;
-  font-variant: small-caps;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-secundary);
+  z-index: 1;
+  transition: var(--transition);
 }
 
-.nav__navigation {
+.nav__container {
   display: flex;
   flex-direction: row;
-  background-color: var(--color-secundary);
+  font-variant: small-caps;
   align-items: center;
+  justify-content: space-between;
+  
 }
 
 .nav__logo {
@@ -24,15 +22,29 @@ nav {
   padding: 0.7rem 0.5rem;
   margin-left: 2rem;
   width: max-content;
+  transition: var(--transition);  
 }
 
-.nav__enlaces {
+.nav__links {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.nav__enlaces a {
+.nav__links a {
   color: var(--color-bg);
   margin: 0 1rem;
+}
+
+.coloredNav {
+  background-color: var(--color-bg);
+}
+
+.coloredLinks a {
+  color: var(--color-primary);
+}
+
+.coloredLogo{
+  color: var(--color-bg);
+  background: var(--color-secundary);
 }
