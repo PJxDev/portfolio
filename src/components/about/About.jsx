@@ -8,7 +8,7 @@ const About = () => {
     <section id="about">
       <div className="container about__container">
         <h1>Sobre mí</h1>
-        <div className="about__main">
+        <article className="about__main">
           <img src={Me2} alt="Me computing" />
           <div className="about__text">
             <p>Nací en Málaga con dos pasiones: la música y la programación.</p>
@@ -21,7 +21,7 @@ const About = () => {
               <ButtonMail />
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );
