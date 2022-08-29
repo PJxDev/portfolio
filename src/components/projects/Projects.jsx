@@ -28,7 +28,7 @@ const Projects = () => {
           data.map(({ id, title, description, image, link }) => {
             return (
               <ProjectBox
-                id={id}
+                key={id}
                 title={title}
                 description={description}
                 image={image}

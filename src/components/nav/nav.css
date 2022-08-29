@@ -12,7 +12,6 @@ nav {
   font-variant: small-caps;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .nav__logo {
@@ -22,7 +21,7 @@ nav {
   padding: 0.7rem 0.5rem;
   margin-left: 2rem;
   width: max-content;
-  transition: var(--transition);  
+  transition: var(--transition);
 }
 
 .nav__links {
@@ -34,13 +33,13 @@ nav {
 .nav__links a {
   color: var(--color-bg);
   margin: 0 1rem;
-  padding:0.1rem;
-  border-radius:1rem;
+  padding: 0.1rem;
+  border-radius: 1rem;
 }
 
-.links:hover{
+.links:hover {
   border-radius: 1rem;
-  padding:0.1rem;
+  padding: 0.1rem;
   background-color: var(--color-terciary-variant);
 }
 
@@ -73,7 +72,20 @@ nav #button__enflag:hover {
   background-color: var(--color-terciary-variant);
 }
 
-.coloredLogo{
+.coloredLogo {
   color: var(--color-bg);
   background: var(--color-secundary);
+}
+
+/* MEDIA QUERIES (TABLET) */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* MEDIA QUERIES (SMARTPHONES)*/
+@media screen and (max-width: 600px) {
+  .nav__links {
+    visibility: hidden;
+  }
 }

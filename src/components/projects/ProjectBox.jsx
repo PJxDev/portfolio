@@ -8,7 +8,7 @@ const ProjectBox = ({
   description,
 }) => {
   return (
-    <div id={id} className="projects__box">
+    <div key={id} className="projects__box">
       <img src={image} alt={title} />
 
       {link ? (
