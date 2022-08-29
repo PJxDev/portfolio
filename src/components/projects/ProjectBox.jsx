@@ -1,16 +1,27 @@
-import React from 'react'
+import React from "react";
 
-const ImgPrueba = 'https://i.ytimg.com/vi/NrZygfYklXk/maxresdefault.jpg'
-
-
-const ProjectBox = () => {
+const ProjectBox = ({
+  id,
+  title,
+  image = "https://www.kalypsofarms.com/wp-content/uploads/2019/08/dummy-300x207.png",
+  link,
+  description,
+}) => {
   return (
-    <div className='projects__box'>
-        <img src={ImgPrueba} alt="" />
-        <h3>Titulo</h3>
-        <span>Descripcion</span>
-    </div>
-  )
-}
+    <div id={id} className="projects__box">
+      <img src={image} alt={title} />
 
-export default ProjectBox
+      {link ? (
+        <a href={link}>
+          <h3>{title}</h3>
+        </a>
+      ) : (
+        <h3>{title}</h3>
+      )}
+      
+      <span>{description}</span>
+    </div>
+  );
+};
+
+export default ProjectBox;
