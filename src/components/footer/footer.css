@@ -10,11 +10,21 @@ footer h4 {
   font-size: 1rem;
 }
 
-footer #header__linkedin,
-footer #header__github {
+footer #button__linkedin,
+footer #button__github {
   color: var(--color-bg);
+  transition: var(--transition);
 }
 
-.footer__container > .header__socials {
-  justify-content: center;
+footer #button__linkedin:hover,
+footer #button__github:hover {
+  color: var(--color-terciary-variant);
 }
+
+.footer__socials{
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: center;
+  gap: 0.75rem;
+}
+

@@ -2,13 +2,13 @@ import React from "react";
 import ButtonGithub from "../buttons/ButtonGithub";
 import ButtonLinkedin from "../buttons/ButtonLinkedin";
 
-const HeaderSocials = () => {
+const FooterSocials = () => {
   return (
-    <div className="header__socials">
+    <div className="footer__socials">
       <ButtonLinkedin />
       <ButtonGithub />
     </div>
   );
 };
 
-export default HeaderSocials;
+export default FooterSocials;

@@ -34,14 +34,27 @@ nav {
 .nav__links a {
   color: var(--color-bg);
   margin: 0 1rem;
+  padding:0.1rem;
   border-radius:1rem;
 }
 
-.nav__links a:hover{
+.links:hover{
   border-radius: 1rem;
-  padding:0.2rem;
-  background-color: var(--color-secundary-variant);
+  padding:0.1rem;
+  background-color: var(--color-terciary-variant);
 }
+
+#button__enflag {
+  transition: var(--transition);
+}
+
+nav #button__enflag:hover {
+  background-color: var(--color-bg);
+  padding: 0.1rem;
+  border-radius: 50%;
+}
+
+/* Scroll Event */
 
 .coloredNav {
   background-color: var(--color-bg);
@@ -53,6 +66,10 @@ nav {
 
 .coloredLinks a:hover {
   color: var(--color-bg);
+}
+
+.coloredLinks #button__enflag:hover {
+  background-color: var(--color-terciary-variant);
 }
 
 .coloredLogo{

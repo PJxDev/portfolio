@@ -14,6 +14,7 @@
   --color-secundary: #00b9ff;
   --color-secundary-variant: #0388b8;
   --color-terciary: #c5f0ff;
+  --color-terciary-variant: #e91e63;
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -86,14 +87,6 @@ a {
   transition: var(--transition);
 }
 
-/*a:hover {
-  text-decoration: underline;
-}*/
-
-i{
-  color: var(--color-bg);
-}
-
 .btn {
   width: max-content;
   display: block;
@@ -107,8 +100,7 @@ i{
 }
 
 .btn:hover {
-  /*color: var(--color-secundary);*/
-  background: var(--color-secundary-variant);
+  background: var(--color-terciary-variant);
 }
 
 img {

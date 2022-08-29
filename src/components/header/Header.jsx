@@ -1,6 +1,5 @@
 import React from "react";
 import "./header.css";
-//import Nav from "../nav/Nav";
 import Me from "../../assets/imgs/img1.jpg";
 import HeaderSocials from "./HeaderSocials";
 import HeaderButtons from "./HeaderButtons";

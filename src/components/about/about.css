@@ -55,6 +55,8 @@
     color: var(--color-bg);
 }
 
-.about__button i{
+.about__button a{
     color: var(--color-secundary);
+    position: relative;
+    top: 0.14rem;
 }
