@@ -17,7 +17,7 @@ const GithubIcon = (
 
 const ButtonGithub = () => {
   return (
-        <a href="https://github.com/PJxDev" target="_blank">
+        <a href="https://github.com/PJxDev" target="_blank" rel="noopener">
         {GithubIcon}
       </a>
   )

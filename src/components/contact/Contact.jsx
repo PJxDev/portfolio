@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
+import BlueBG from "../../assets/svgs/blue.svg";
 
 const Contact = () => {
   const form = useRef();
@@ -13,7 +14,7 @@ const Contact = () => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_USER_ID,
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -23,7 +24,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-      e.target.reset();
+    e.target.reset();
   };
 
   return (
@@ -49,11 +50,14 @@ const Contact = () => {
             placeholder="Introduzca su mensaje"
             required
           ></textarea>
-          <button type="submit" className="btn" >
+          <button type="submit" className="btn">
             Enviar Mensaje
           </button>
         </form>
       </article>
+      <div className="contact__bg">
+        <img src={BlueBG} alt="fondo azul" />
+      </div>
     </section>
   );
 };

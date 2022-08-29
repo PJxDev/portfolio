@@ -1,32 +1,51 @@
-.contact__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem;
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
 }
 
-#contact form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+#contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 input,
 textarea {
-    background-color: var(--color-terciary);
-    width: 28rem;
-    font-size: 1rem;
-    margin: 1rem;
-    padding: 0.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--color-primary);
-    resize: none;
+  background-color: var(--color-terciary);
+  width: 28rem;
+  font-size: 1rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--color-primary);
+  resize: none;
+}
+
+#contact .btn{
+    background-color: var(--color-bg);
+    color: var(--color-secundary);
+}
+
+#contact .btn:hover{
+    background-color: var(--color-terciary-variant);
+    color: var(--color-bg);
 }
 
 button {
-    font-size: 1rem;
-    font-weight: 500;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.contact__bg {
+  position: relative;
+}
+.contact__bg img {
+  position: absolute;
+  z-index: -1;
+  transform: rotate(180deg);
+  bottom:0rem
 }

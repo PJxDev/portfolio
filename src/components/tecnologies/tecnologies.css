@@ -1,0 +1,49 @@
+#tecnologies{
+    margin-top: 2rem;
+}
+
+.tecnologies__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background: var(--color-secundary);
+    color: white;
+    border-radius: 3rem;
+    padding: 2rem;
+    transition: var(--transition);
+    align-items: center;
+    justify-items:center;
+}
+    
+.tecnologies__container h1{
+    color: white;
+    font-size: 2.8rem;
+}
+
+.tecnologies__tecnologies{
+    display: grid;
+    grid-row: 2;
+}
+
+.tecnologies__inproject{
+    display: grid;
+    grid-row: 2;
+}
+
+.tecnologies__container li{
+    display: inline;
+    margin:1rem;
+    transition: var(--transition);
+}
+
+#html__icon:hover{
+    color: #E34F26;
+}
+#css__icon:hover{
+    color: #1572B6;
+}
+#js__icon:hover{
+    color: #F7DF1E;
+}
+#react__icon:hover{
+    color: #61DAFB;
+}

@@ -19,6 +19,7 @@ const ButtonLinkedin = () => {
       <a
         href="https://www.linkedin.com/in/pedro-jes%C3%BAs-cruces-almendro-b3ba87220/"
         target="_blank"
+        rel="author"
       >
         {LinkedinIcon}
       </a>

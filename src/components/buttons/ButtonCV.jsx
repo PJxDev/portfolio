@@ -3,28 +3,24 @@ import CV from "../../assets/CV sp.pdf";
 
 const documentIcon = (
   <svg
-    stroke="currentColor"
-    fill="currentColor"
-    strokeWidth="0"
-    viewBox="0 0 24 24"
-    height="1rem"
-    width="1rem"
     xmlns="http://www.w3.org/2000/svg"
+    width="1.1rem"
+    height="1.1rem"
+    viewBox="0 0 21.486 28.648"
   >
     <path
-      fill="none"
-      stroke="currentcolor"
-      strokeWidth="2"
-      d="M6,16 L16,16 L6,16 L6,16 Z M6,12 L18,12 L6,12 L6,12 Z M6,8 L11,8 L6,8 L6,8 Z M14,1 L14,8 L21,8 M3,23 L3,1 L15,1 L21,7 L21,23 L3,23 Z"
-    ></path>
+      id="file-lines-solid"
+      d="M14.324,0V7.162h7.162Zm-1.79,7.162V0H2.686A2.686,2.686,0,0,0,0,2.686V25.962a2.686,2.686,0,0,0,2.686,2.686H18.8a2.686,2.686,0,0,0,2.686-2.686V8.952H14.374A1.8,1.8,0,0,1,12.533,7.162Zm2.686,16.114H6.267a.9.9,0,0,1,0-1.79h8.952a.9.9,0,0,1,0,1.79Zm0-3.581H6.267a.9.9,0,0,1,0-1.79h8.952a.9.9,0,1,1,0,1.79Zm.9-4.476a.9.9,0,0,1-.9.9H6.267a.9.9,0,0,1,0-1.79h8.952A.9.9,0,0,1,16.114,15.219Z"
+      fill="currentColor"
+    />
   </svg>
 );
 
 const ButtonCV = () => {
   return (
-      <a href={CV} target="_blank" className="btn">
-        <i>{documentIcon}</i> Currículum
-      </a>
+    <a href={CV} target="_blank" className="btn" rel="noopener">
+      <i>{documentIcon}</i> Currículum
+    </a>
   );
 };
 
