@@ -58,6 +58,7 @@ nav #button__enflag:hover {
 
 .coloredNav {
   background-color: var(--color-bg);
+  opacity: 0.9;
 }
 
 .coloredLinks a {

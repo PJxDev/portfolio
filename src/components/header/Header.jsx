@@ -8,9 +8,10 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <HeaderSocials />
-        <h3>Hola! soy</h3>
-        <h2>Pedro J. Cruces</h2>
+        <div className="header__title">
+          <h3>Hola! soy</h3>
+          <h2>Pedro J. Cruces</h2>
+        </div>
         <div className="header__img">
           <HeaderButtons />
           <img src={Me} alt="me" />
@@ -19,6 +20,7 @@ const Header = () => {
           <h1>Desarrollador Web</h1>
         </div>
       </div>
+      <HeaderSocials />
     </header>
   );
 };
