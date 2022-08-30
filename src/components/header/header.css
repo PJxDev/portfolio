@@ -1,11 +1,5 @@
 header {
   display: flex;
-  /* display: grid;
-  grid-template:
-    ". h3 socials"
-    ". h2 ."
-    "btn img ."
-    ". h1 ."; */
   margin-top: 2rem;
   justify-content: center;
 }
