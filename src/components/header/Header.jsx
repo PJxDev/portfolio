@@ -11,6 +11,7 @@ const Header = () => {
         <div className="header__title">
           <h3>Hola! soy</h3>
           <h2>Pedro J. Cruces</h2>
+          <h1 id="title__hided">Desarrollador Web</h1>
         </div>
         <div className="header__img">
           <HeaderButtons />
