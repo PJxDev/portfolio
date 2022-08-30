@@ -41,3 +41,27 @@
     width: 2.3rem;
     height: 2.3rem;
 }
+
+/* MEDIA QUERIES (TABLETS) */
+@media screen and (max-width: 1024px) {
+    .tecnologies__container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: flex-start;
+    }
+
+    h1:last-of-type{
+        margin-top: 3rem;
+    }
+  }
+  
+  /* MEDIA QUERIES (SMARTPHONES)*/
+  @media screen and (max-width: 600px) {
+    :is(.tecnologies__tecnologies,
+        .tecnologies__inproject){
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+  }
+  

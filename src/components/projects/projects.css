@@ -30,7 +30,8 @@
     flex-wrap: wrap;
     text-align: center;
     gap: 3rem;
-    margin: 2rem 5rem;
+    margin: 2rem 10rem;
+    align-items: stretch;
 }
 
 .projects__box{
