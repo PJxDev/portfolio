@@ -29,8 +29,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    gap: 4rem;
-    margin: 2rem 10rem;
+    gap: 3rem;
+    margin: 2rem 5rem;
 }
 
 .projects__box{

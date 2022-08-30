@@ -19,31 +19,25 @@
     font-size: 2.8rem;
 }
 
-.tecnologies__tecnologies{
-    display: grid;
+.tecnologies__tecnologies, .tecnologies__inproject{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 2rem;
     grid-row: 2;
+    width: 100%;
+
 }
 
-.tecnologies__inproject{
-    display: grid;
-    grid-row: 2;
+.tech{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
 }
 
-.tecnologies__container li{
-    display: inline;
-    margin:1rem;
-    transition: var(--transition);
-}
-
-#html__icon:hover{
-    color: #E34F26;
-}
-#css__icon:hover{
-    color: #1572B6;
-}
-#js__icon:hover{
-    color: #F7DF1E;
-}
-#react__icon:hover{
-    color: #61DAFB;
+.tech svg{
+    width: 2.3rem;
+    height: 2.3rem;
 }
