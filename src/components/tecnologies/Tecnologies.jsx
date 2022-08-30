@@ -194,8 +194,8 @@ const TailwindCSSIcon = (
 
 const Tecnologies = () => {
   return (
-    <section id="tecnologies">
-      <article className="container tecnologies__container">
+    <section id="tecnologies" className="container">
+      <article className="tecnologies__container">
         <h1>Tecnologías</h1>
         <div className="tecnologies__tecnologies">
           <div className="tech">

@@ -1,63 +1,81 @@
-#about{
-    background: var(--color-secundary);
-    margin-top: 1rem;
+#about {
+  background: var(--color-secundary);
+  margin-top: 1rem;
 }
 
-.about__container{
-    display: flex;
-    flex-direction: column;
-    color: var(--color-bg);
-    grid-template-columns: 5% 42% 5% 43% 5%;
-    padding-bottom: 3rem;
+.about__container {
+  color: var(--color-bg);
+  padding-bottom: 3rem;
 }
 
-.about__container h1{
-    text-align: center;
-    color: var(--color-bg);
+.about__container h1 {
+  text-align: center;
+  color: var(--color-bg);
 }
 
-.about__main{
-    display: grid;
-    gap:2rem;
-    padding-top: 2rem;
-
+.about__main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-top: 2rem;
 }
 
-.about__main img{
-    margin:0 auto;
-    grid-column: 2;
-    border: 1rem solid white;
-    width: 25rem;
+.about__main img {
+  margin: 0 auto;
+  border: 1rem solid white;
+  width: 22rem;
+  height: 30rem;
+  object-fit: cover;
 }
 
 .about__text {
-    display:flex;
-    flex-direction: column;
-    grid-column: 4;
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-right: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__button {
-    display: flex;
-    font-size: 1.2rem;
-    grid-column: 4;
-    justify-content: center;
-    margin-top: 6rem;
+  font-size: 1.2rem;
+  margin-top: 6rem;
 }
 
 .about__button > .btn {
-    background:var(--color-bg);
-    color: var(--color-secundary);
+  background: var(--color-bg);
+  color: var(--color-secundary);
 }
 
 .about__button > .btn:hover {
-    color: var(--color-bg);
+  color: var(--color-bg);
 }
 
-.about__button a{
-    color: var(--color-secundary);
-    position: relative;
-    top: 0.14rem;
+.about__button a {
+  color: var(--color-secundary);
+  position: relative;
+  top: 0.14rem;
+}
+
+/* MEDIA QUERIES (TABLETS) */
+@media screen and (max-width: 1024px) {
+    .about__main {
+        flex-direction: column;
+    }
+
+    .about__text{
+        font-size: 1.4rem;
+        margin: auto;
+        text-align: left;
+    }
+
+    .about__button {
+        margin-top: 3rem;
+      }
+    
+}
+
+/* MEDIA QUERIES (SMARTPHONES)*/
+@media screen and (max-width: 600px) {
 }
