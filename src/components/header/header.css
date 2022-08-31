@@ -93,6 +93,7 @@ header h1 {
   justify-content: space-between;
   position: absolute;
   top: 51rem;
+  transition: all 1s ease;
 }
 
 .background__icon {
@@ -104,7 +105,7 @@ header h1 {
   left: -38rem;
   top: 2rem;
   transform: rotateZ(-30deg);
-  animation: bg_special 7s ease-in 3s infinite;
+  animation: bg_special 7s ease-in 2s infinite;
   opacity: 0;
 }
 
@@ -113,14 +114,14 @@ header h1 {
   top: -2rem;
   opacity: 0;
   transform: rotateZ(-10deg);
-  animation: bg_special 7s ease-in 2s infinite;
+  animation: bg_special 7s ease-in infinite;
 }
 
 #BGicon__3 {
   left: 14rem;
   top: -3rem;
   opacity: 0;
-  animation: bg_special 7s ease-in 4s infinite;
+  animation: bg_special 7s ease-in 3s infinite;
   transform: rotateZ(10deg);
 }
 

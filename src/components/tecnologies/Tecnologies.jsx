@@ -1,6 +1,7 @@
 import React from "react";
 import "./tecnologies.css";
 
+
 const HTMLIcon = (
   <svg
     id="Sin_título-1"
@@ -191,6 +192,8 @@ const TailwindCSSIcon = (
     </g>
   </svg>
 );
+
+const arraySVGs =[HTMLIcon,CSSIcon,JSIcon,ReactIcon,MongoDBIcon,AstroIcon,TailwindCSSIcon]
 
 const Tecnologies = () => {
   return (
