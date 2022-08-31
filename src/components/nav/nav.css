@@ -44,13 +44,13 @@ nav #button__enflag:hover {
 
 #menu-bar {
   position: relative;
-  top: 7.8rem;
-  right: -3rem;
-  width: 2.8rem;
-  height: 2.8rem;
+  top: 0.9rem;
+  right: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
   cursor: pointer;
   z-index: 3;
-
+  display: none;
 }
 
 .bar {
@@ -60,59 +60,46 @@ nav #button__enflag:hover {
   display: block;
   border-radius: 5px;
   transition: var(--transition);
-
 }
 
 #bar1 {
   transform: translateY(-4px);
-
-
 }
 
 #bar3 {
   transform: translateY(4px);
-
-
 }
 
 .nav__links {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-direction: row;
+  gap: 1rem;
   align-items: center;
   margin-left: auto;
-  visibility: hidden;
-  opacity: 0;
   transition: 0.3s ease;
   position: relative;
-  top: 10rem;
-  right: -1rem;
-
-
 }
 
 .nav__links a {
-  color: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 1.1rem;
+  /* font-weight: bold; */
   margin: 0 1rem;
   padding: 0.1rem;
   border-radius: 1rem;
   transition: var(--transition);
-
-
 }
 
 .links:hover {
   border-radius: 1rem;
   padding: 0.1rem;
   background-color: var(--color-terciary-variant);
-
 }
 
-:is(.menu-bg, #menu) {
+.menu-bg {
   position: absolute;
-  top: 0;
+  top: 153px;
   right: 0;
-
 }
 
 .menu-bg {
@@ -120,42 +107,25 @@ nav #button__enflag:hover {
   width: 0;
   height: 0;
   background: radial-gradient(circle, white, var(--color-terciary));
-  border-radius: 50%;
   transition: var(--transition);
-
 }
 
 .change {
-  visibility: visible;
   display: relative;
-  opacity: 1;
   transition: var(--transition);
-
 }
+
 
 .change #bar1 {
   transform: translateY(4px) rotateZ(-45deg);
-
-
 }
 
 .change #bar2 {
   opacity: 0;
-
-
 }
 
 .change #bar3 {
   transform: translateY(-6px) rotateZ(45deg);
-
-
-}
-
-.change-bg {
-  width: 39rem;
-  height: 39rem;
-  transform: translate(37%, -43%);
-
 }
 
 /* Scroll Event */
@@ -168,53 +138,62 @@ nav #button__enflag:hover {
 .coloredLinks a {
   color: var(--color-primary);
   transition: all 0.3s ease;
-
 }
 
 .coloredLinks a:hover {
   color: var(--color-bg);
   transition: all 0.3s ease;
-
 }
 
 .coloredLinks #button__enflag:hover {
   background-color: var(--color-terciary-variant);
   transition: all 0.3s ease;
-
 }
 
 .coloredLogo {
   color: var(--color-bg);
   background: var(--color-secundary);
   transition: all 0.3s ease;
-
 }
 
 /* MEDIA QUERIES (TABLET) */
 
 @media screen and (max-width: 1024px) {
-  .menu-bg{
-    border-radius: 2rem;
-    width: 0;
-    height: 21rem;
-  }
-  .change-bg{
-    width: 20rem;
-    height: 39rem;
-    
-  }
-  
+.nav__links{
+  gap: 0.5rem;
+}
 }
 
 /* MEDIA QUERIES (SMARTPHONES)*/
 @media screen and (max-width: 600px) {
-  .nav__links{
-    top: 8rem;
+  #menu-bar {
+    position: absolute;
+    display: block;
+    top: 1rem;
+    right: 4rem;
   }
 
-  .change-bg{
+  .menu-bg {
+    border-radius: 0 2rem 2rem 2rem;
+    width: 0;
+    height: 21rem;
+  }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 5rem;
+    right: 1rem;
+  }
+  
+  .nav__links a{
+    color: var(--color-primary);
+  }
+  
+  .change-bg {
     width: 14rem;
-    height: 34rem;
-    
+    height: 15rem;
+    transform: translate(37%, -43%);
   }
 }

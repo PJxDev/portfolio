@@ -41,7 +41,7 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-primary);
   line-height: 1.7;
@@ -92,6 +92,7 @@ a {
   cursor: pointer;
   border: 1px solid transparent;
   transition: var(--transition);
+  font-weight: 300;
 }
 
 .btn i {

@@ -38,7 +38,10 @@ const Nav = () => {
             <div id="bar3" className="bar"></div>
           </div>
 
-          <div className={`nav__links ${isMenuActive ? "change" : ""}`}>
+          <div
+            className={`nav__links ${isMenuActive ? "change-links" : ""}`}
+            style={{ display: `${isMenuActive ? "flex" : ""}` }}
+          >
             <a onClick={() => closeMenu()} className="links" href="#">
               Inicio
             </a>
