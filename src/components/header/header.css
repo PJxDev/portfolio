@@ -185,6 +185,10 @@ header h1 {
     margin: 0 auto;
   }
 
+  .background__icons{
+    display: none;
+  }
+
   .header__socials {
     right: 0;
   }
