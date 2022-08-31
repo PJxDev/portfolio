@@ -3,10 +3,12 @@ import "./header.css";
 import Me from "../../assets/imgs/img1.jpg";
 import HeaderSocials from "./HeaderSocials";
 import HeaderButtons from "./HeaderButtons";
+import BackgroundSpecial from "./BackgroundSpecial";
 
 const Header = () => {
   return (
     <header>
+      <BackgroundSpecial />
       <div className="container header__container">
         <div className="header__title">
           <h3>Hola! soy</h3>
