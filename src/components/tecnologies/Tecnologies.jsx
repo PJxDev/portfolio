@@ -1,7 +1,6 @@
 import React from "react";
 import "./tecnologies.css";
 
-
 const HTMLIcon = (
   <svg
     id="Sin_título-1"
@@ -193,49 +192,58 @@ const TailwindCSSIcon = (
   </svg>
 );
 
-const arraySVGs =[HTMLIcon,CSSIcon,JSIcon,ReactIcon,MongoDBIcon,AstroIcon,TailwindCSSIcon]
+const arraySVGs = [
+  HTMLIcon,
+  CSSIcon,
+  JSIcon,
+  ReactIcon,
+  MongoDBIcon,
+  AstroIcon,
+  TailwindCSSIcon,
+];
 
 const Tecnologies = () => {
-  return (
-    <section id="tecnologies" className="container">
-      <article className="tecnologies__container">
-        <h1>Tecnologías</h1>
-        <div className="tecnologies__tecnologies">
-          <div className="tech">
-            <i>{HTMLIcon}</i>
-            <span>HTML5</span>
+  
+    return (
+      <section id="tecnologies" className="container">
+        <article className="tecnologies__container">
+          <h1>Tecnologías</h1>
+          <div className="tecnologies__tecnologies">
+            <div className="tech">
+              <i>{HTMLIcon}</i>
+              <span>HTML5</span>
+            </div>
+            <div className="tech">
+              <i>{CSSIcon}</i>
+              <span>CSS3</span>
+            </div>
+            <div className="tech">
+              <i>{JSIcon}</i>
+              <span>JavaScript</span>
+            </div>
+            <div className="tech">
+              <i>{ReactIcon}</i>
+              <span>React</span>
+            </div>
           </div>
-          <div className="tech">
-            <i>{CSSIcon}</i>
-            <span>CSS3</span>
+          <h1>Aprendiendo</h1>
+          <div className="tecnologies__inproject">
+            <div className="tech">
+              <i>{MongoDBIcon}</i>
+              <span>MongoDB</span>
+            </div>
+            <div className="tech">
+              <i>{AstroIcon}</i>
+              <span>Astro</span>
+            </div>
+            <div className="tech">
+              <i>{TailwindCSSIcon}</i>
+              <span>TailwindCSS</span>
+            </div>
           </div>
-          <div className="tech">
-            <i>{JSIcon}</i>
-            <span>JavaScript</span>
-          </div>
-          <div className="tech">
-            <i>{ReactIcon}</i>
-            <span>React</span>
-          </div>
-        </div>
-        <h1>En proyecto</h1>
-        <div className="tecnologies__inproject">
-          <div className="tech">
-            <i>{MongoDBIcon}</i>
-            <span>MongoDB</span>
-          </div>
-          <div className="tech">
-            <i>{AstroIcon}</i>
-            <span>Astro</span>
-          </div>
-          <div className="tech">
-            <i>{TailwindCSSIcon}</i>
-            <span>TailwindCSS</span>
-          </div>
-        </div>
-      </article>
-    </section>
-  );
+        </article>
+      </section>
+    );
 };
 
 export default Tecnologies;
