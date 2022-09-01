@@ -1,7 +1,7 @@
 import React from "react";
 import "./tecnologies.css";
+import {useExample} from '../hooks/useExample.jsx'
 
-//import array
 
 const HTMLIcon = (
   <svg
@@ -205,6 +205,8 @@ const arraySVGs = [
 ];
 
 const Tecnologies = () => {
+  const {myVar} = useExample();
+  console.log(myVar);
   
     return (
       <section id="tecnologies" className="container">
