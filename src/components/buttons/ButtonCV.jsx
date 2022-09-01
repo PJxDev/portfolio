@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/CV sp.pdf";
+import CV from "../../assets/CV en.pdf";
 
 const documentIcon = (
   <svg
