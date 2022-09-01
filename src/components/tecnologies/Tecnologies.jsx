@@ -1,6 +1,8 @@
 import React from "react";
 import "./tecnologies.css";
 
+//import array
+
 const HTMLIcon = (
   <svg
     id="Sin_título-1"
