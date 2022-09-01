@@ -206,7 +206,6 @@ const arraySVGs = [
 
 const Tecnologies = () => {
   const {myVar} = useExample();
-  console.log(myVar);
 
     return (
       <section id="tecnologies" className="container">
@@ -215,7 +214,7 @@ const Tecnologies = () => {
           <div className="tecnologies__tecnologies">
             <div className="tech">
               <i>{myVar}</i>
-              <span>HTML5</span>
+              <span>Myvar</span>
             </div>
             <div className="tech">
               <i>{CSSIcon}</i>
