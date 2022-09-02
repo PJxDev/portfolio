@@ -26,7 +26,7 @@ const HTMLIcon = (
   );
 
 export const useExample = () => {
-  let myVar = "";
+  let myVar = HTMLIcon;
 
   return {
     myVar
