@@ -25,7 +25,7 @@ const HTMLIcon = (
     </svg>
   );
 
-const useExample = () => {
+export const useExample = () => {
   let myVar = "";
 
   return {
