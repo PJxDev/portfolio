@@ -23,6 +23,15 @@
   --transition: all 400ms ease;
 }
 
+[data-theme='dark'] {
+  --color-bg: #000;
+  --color-primary: #fff;
+  --color-secundary: #451b6b;
+  --color-secundary-variant: #581a64;
+  --color-terciary: #aa65b8;
+  --color-terciary-variant: #1e32e9;
+}
+
 /* FUENTES */
 
 @font-face {
