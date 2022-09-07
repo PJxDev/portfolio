@@ -203,42 +203,36 @@ const arraySVGs = [
 ];
 
 function randomNumber() {
-  let number = Math.floor(Math.random() * arraySVGs.length);
-  return number;
+  let random = () => Math.floor(Math.random() * arraySVGs.length);
+  let numbers = [random(), random(), random(), random()];
+  return numbers;
 }
 
-function cargarItem4(item) {
+function cargarItem(id, item) {
   return (
-    <div id="BGicon__4" className="background__icon">
+    <div id={"BGicon__" + id} className="background__icon">
       {arraySVGs[item]}
     </div>
   );
 }
 
-const item1 = arraySVGs[randomNumber()];
-const item2 = arraySVGs[randomNumber()];
-const item3 = arraySVGs[randomNumber()];
-const item4 = arraySVGs[randomNumber()];
-
 const BackgroundSpecial = () => {
-  const [number, setNumber] = useState(randomNumber());
+
+  const [number, setNumber] = useState([0,1,2,3]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNumber(randomNumber());
+    }, 6900);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="background__icons">
-      <div id="BGicon__1" className="background__icon">
-        {item1}
-      </div>
-      <div id="BGicon__2" className="background__icon">
-        {item2}
-      </div>
-      <div id="BGicon__3" className="background__icon">
-        {item3}
-      </div>
-      {cargarItem4(number)}
-
-      {/* <div id="BGicon__4" className="background__icon">
-        {item4}
-      </div> */}
+      {cargarItem(1,number[0])}
+      {cargarItem(2,number[1])}
+      {cargarItem(3,number[2])}
+      {cargarItem(4,number[3])}
     </div>
   );
 };
