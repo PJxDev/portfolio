@@ -153,7 +153,6 @@ const ButtonFlag = () => {
     }
   };
 
-  console.log(i18next.language);
   return (
     <a onClick={handleClick}>
       <i>{i18next.language === "es" ? EnFlag : SpFlag}</i>
