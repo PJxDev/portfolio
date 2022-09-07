@@ -1,8 +1,11 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const EnFlag = (
   <svg
     id="button__enflag"
+    className="button__flag"
     xmlns="http://www.w3.org/2000/svg"
     width="1.5rem"
     height="1.5rem"
@@ -85,12 +88,77 @@ const EnFlag = (
   </svg>
 );
 
-const ButtonEnFlag = () => {
+const SpFlag = (
+  <svg
+    id="button__spflag"
+    className="button__flag"
+    xmlns="http://www.w3.org/2000/svg"
+    width="1.5rem"
+    height="1.5rem"
+    viewBox="0 0 38 38"
+  >
+    <defs>
+      <clipPath id="clip-path">
+        <circle
+          id="Elipse_1"
+          data-name="Elipse 1"
+          cx="19"
+          cy="19"
+          r="19"
+          transform="translate(1762 -66)"
+          fill="#fff"
+          stroke="#707070"
+          strokeWidth="1"
+        />
+      </clipPath>
+    </defs>
+    <g
+      id="Enmascarar_grupo_1"
+      data-name="Enmascarar grupo 1"
+      transform="translate(-1762 66)"
+      clipPath="url(#clip-path)"
+    >
+      <g id="Bandera_de_España" transform="translate(1744.9 -66.65)">
+        <path
+          id="Trazado_502"
+          data-name="Trazado 502"
+          d="M0,0H72.2V38H0Z"
+          transform="translate(0 0.65)"
+          fill="#ad1519"
+        />
+        <rect
+          id="Rectángulo_11"
+          data-name="Rectángulo 11"
+          width="72"
+          height="18"
+          transform="translate(0.1 9.65)"
+          fill="#fabd00"
+        />
+      </g>
+    </g>
+  </svg>
+);
+
+const ButtonFlag = () => {
+  const [txt, i18n] = useTranslation("global");
+
+  const handleClick = () => {
+    switch (i18next.language) {
+      case "es":
+        i18n.changeLanguage("en");
+        break;
+      case "en":
+        i18n.changeLanguage("es");
+        break;
+    }
+  };
+
+  console.log(i18next.language);
   return (
-    <a href="">
-      <i>{EnFlag}</i>
+    <a onClick={handleClick}>
+      <i>{i18next.language === "es" ? EnFlag : SpFlag}</i>
     </a>
   );
 };
 
-export default ButtonEnFlag;
+export default ButtonFlag;

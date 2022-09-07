@@ -1,0 +1,37 @@
+{
+  "header": {
+    "title-1": "Hi! My name is",
+    "title-3": "Web Developer",
+    "btn-talk": "Let's Talk",
+    "btn-cv": "Curriculum"
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "contact": "Contact me"
+  },
+
+  "about": {
+    "title": "About me",
+    "bio-1": "I was born in Málaga with two passions: Playing music and typing code",
+    "bio-2": "Nowadays, I inmerse in a degree where I'm studying developing web apps, while at the same time, I'm researching and learning for new features and tecnologies that can help me in my journey"
+  },
+
+  "tecnologies": {
+    "title-1": "Tecnologies",
+    "title-2": "Learning"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "ph-name": "Introduce your name",
+    "ph-email": "Introduce your email",
+    "ph-msg": "Introduce  your message",
+    "btn-send": "Send message"
+  },
+
+  "footer": {
+    "title": "Pedro J. Cruces - Web Developer"
+  }
+}

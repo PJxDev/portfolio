@@ -2,8 +2,11 @@ import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "emailjs-com";
 import BlueBG from "../../assets/svgs/blue.svg";
+import {useTranslation} from "react-i18next"
 
 const Contact = () => {
+  const [txt, i18n] = useTranslation("global")
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,28 +33,28 @@ const Contact = () => {
   return (
     <section id="contact">
       <article className="container contact__container">
-        <h1>Contacto</h1>
+        <h1>{txt("contact.title")}</h1>
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
-            placeholder="Introduzca su nombre"
+            placeholder={`${txt("contact.ph-name")}`}
             required
           />
           <input
             type="email"
             name="email"
-            placeholder="Introduzca su email"
+            placeholder={`${txt("contact.ph-email")}`}
             required
           />
           <textarea
             name="message"
             rows="7"
-            placeholder="Introduzca su mensaje"
+            placeholder={`${txt("contact.ph-msg")}`}
             required
           ></textarea>
           <button type="submit" className="btn">
-            Enviar Mensaje
+            {txt("contact.btn-send")}
           </button>
         </form>
       </article>

@@ -25,7 +25,7 @@ const BackgroundSpecial = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setNumber(randomNumber());
-    }, 6900);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 

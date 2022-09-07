@@ -1,14 +1,18 @@
 import React from "react";
 import "./tecnologies.css";
 import { useSVGArray } from "../hooks/useSvgArray";
+import {useTranslation} from "react-i18next"
 
 const Tecnologies = () => {
+  
+  const [txt, i18n] = useTranslation("global")
+
   const {svgArray} = useSVGArray()
   
     return (
       <section id="tecnologies" className="container">
         <article className="tecnologies__container">
-          <h1>Tecnologías</h1>
+          <h1>{txt("tecnologies.title-1")}</h1>
           <div className="tecnologies__tecnologies">
             <div className="tech">
               <i>{svgArray[0]}</i>
@@ -27,7 +31,7 @@ const Tecnologies = () => {
               <span>React</span>
             </div>
           </div>
-          <h1>Aprendiendo</h1>
+          <h1>{txt("tecnologies.title-2")}</h1>
           <div className="tecnologies__inproject">
             <div className="tech">
               <i>{svgArray[4]}</i>

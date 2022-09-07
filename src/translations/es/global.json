@@ -1,0 +1,36 @@
+{
+  "header": {
+    "title-1": "Hola! Me llamo",
+    "title-3": "Desarrollador Web",
+    "btn-talk": "Hablemos",
+    "btn-cv": "Currículum"
+  },
+
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "contact": "Contáctame"
+  },
+
+  "about": {
+    "title": "Sobre mí",
+    "bio-1": "Nací en Málaga con dos pasiones: la música y la programación.",
+    "bio-2": "Actualmente me encuentro inmerso en el CFGS de Desarrollo de Aplicaciones Web, mientras que al mismo tiempo, me dedico a investigar y a aprender nuevas tecnologías"
+  },
+
+  "tecnologies": {
+    "title-1": "Tecnologías",
+    "title-2": "Aprendiendo"
+  },
+
+  "contact": {
+    "title": "Contacto",
+    "ph-name": "Introduzca su nombre",
+    "ph-email": "Introduzca su email",
+    "ph-msg": "Introduzca su mensaje",
+    "btn-send": "Enviar Mensaje"
+  },
+  "footer": {
+    "title": "Pedro J. Cruces - Desarrollador Web"
+  }
+}
