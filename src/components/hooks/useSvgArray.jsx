@@ -1,3 +1,5 @@
+import React from "react";
+
 const HTMLIcon = (
     <svg
       id="Sin_título-1"
@@ -113,8 +115,8 @@ const HTMLIcon = (
   const MongoDBIcon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="10.783"
-      height="24"
+      width="3rem"
+      height="3rem"
       viewBox="0 0 10.783 24"
     >
       <g id="Grupo_9" data-name="Grupo 9" transform="translate(-299.598 -614.68)">
@@ -137,19 +139,19 @@ const HTMLIcon = (
   const AstroIcon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2rem"
-      height="2rem"
+      width="3rem"
+      height="3rem"
       viewBox="0 0 16.83 24"
     >
       <g id="Grupo_8" data-name="Grupo 8" transform="translate(-211.89 -596.51)">
         <path
-          id="Trazado_516"
+          id="astroIcon-1"
           data-name="Trazado 516"
           d="M224.53,614.32a3.124,3.124,0,0,1-.38,1.5,4.455,4.455,0,0,1-1.73,1.66c-.76.48-1.41.89-1.41,2a2.283,2.283,0,0,0,.23,1.03,2.8,2.8,0,0,1-1.72-2.58v-.07c0-.77,0-1.71-1.08-1.71a1.148,1.148,0,0,0-1.15,1.14,4.266,4.266,0,0,1-1.11-2.97,4.8,4.8,0,0,1,.2-1.4c.45.85,2.15,1.49,4.19,1.49a6.212,6.212,0,0,0,3.81-1.04A3.092,3.092,0,0,1,224.53,614.32Z"
           fill="#e54611"
         />
         <path
-          id="Trazado_517"
+          id="astroIcon-2"
           data-name="Trazado 517"
           d="M228.72,612.69a18.2,18.2,0,0,0-5.22-1.77l-2.85-9.61a.361.361,0,0,0-.46-.25.389.389,0,0,0-.25.25l-2.81,9.61a17.827,17.827,0,0,0-5.24,1.77l4.39-14.35a3.568,3.568,0,0,1,.5-1.23,1.56,1.56,0,0,1,.65-.48,3.612,3.612,0,0,1,1.32-.12h3.13a3.612,3.612,0,0,1,1.32.12,1.56,1.56,0,0,1,.65.48h.01a3.83,3.83,0,0,1,.49,1.23Z"
           fill="#000"
@@ -161,8 +163,8 @@ const HTMLIcon = (
   const TailwindCSSIcon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="26.022"
-      height="26.022"
+      width="3rem"
+      height="3rem"
       viewBox="0 0 26.022 26.022"
     >
       <g
@@ -189,7 +191,15 @@ const HTMLIcon = (
     </svg>
   );
 
-  export const useSVGICon = ({icon}) => {
-    let svgIcon = icon
-    return svgIcon
+  export const useSVGArray = () => {
+    let svgArray = [
+      HTMLIcon,
+      CSSIcon,
+      JSIcon,
+      ReactIcon,
+      MongoDBIcon,
+      AstroIcon,
+      TailwindCSSIcon,
+    ];
+    return {svgArray}
   }

@@ -62,4 +62,8 @@
     flex-direction: column;
     margin-left: 4rem;
   }
+
+  .tecnologies__container h1{
+    font-size: 2rem;
+  }
 }

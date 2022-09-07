@@ -3,7 +3,7 @@ import "./header.css";
 import Me from "../../assets/imgs/img1.jpg";
 import HeaderSocials from "./HeaderSocials";
 import HeaderButtons from "./HeaderButtons";
-import BackgroundSpecial from "./BackgroundSpecial";
+import BackgroundSpecial from "../services/BackgroundSpecial";
 
 const Header = () => {
   return (

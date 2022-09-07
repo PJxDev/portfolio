@@ -117,12 +117,16 @@ img {
   .container {
     width: var(--container-width-md);
   }
+
 }
 
 /* MEDIA QUERIES (SMARTPHONES)*/
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+  }
+  h1, h2{
+    font-size: 2rem;
   }
   section > h2{
     margin-bottom: 2rem;
