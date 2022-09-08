@@ -237,6 +237,6 @@ header h1 {
     font-size: 2.2rem;
     display: flex;
     margin-top: 0;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }

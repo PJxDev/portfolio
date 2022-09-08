@@ -3,23 +3,23 @@ import ButtonFlag from "../buttons/ButtonFlag";
 import ButtonDark from "../buttons/ButtonDark";
 import "./nav.css";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 window.addEventListener("scroll", () => {
-  const navBar = document.querySelector("nav");
-  const navLinks = document.querySelector(".nav__links");
-  const navLogo = document.querySelector(".nav__logo");
+  const $ = (el) => document.querySelector(el);
 
-  navBar.classList.toggle("coloredNav", window.scrollY > 800);
-  navLinks.classList.toggle("coloredLinks", window.scrollY > 800);
-  navLogo.classList.toggle("coloredLogo", window.scrollY > 800);
+  $('nav').classList.toggle("coloredNav", window.scrollY > 800);
+  $('.nav__links').classList.toggle("coloredLinks", window.scrollY > 800);
+  $('.nav__logo').classList.toggle("coloredLogo", window.scrollY > 800);
 });
 
 const Nav = () => {
   const [txt, i18n] = useTranslation("global");
   const [isMenuActive, setMenutoActive] = useState(false);
 
-  const checkMenuActive = () =>
+  const checkMenuActive = () => {
     isMenuActive ? setMenutoActive(false) : setMenutoActive(true);
+  };
 
   const closeMenu = () => setMenutoActive(false);
 
