@@ -1,24 +1,7 @@
 import React from "react";
 import "./projects.css";
 import ProjectBox from "./ProjectBox";
-
-const BlueBG= (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1920.001"
-    height="562.293"
-    viewBox="0 0 1920.001 562.293"
-    fill="#00b9ff"
-  >
-    <path
-      id="Sustracción_3"
-      data-name="Sustracción 3"
-      className="cls-1"
-      d="M144.044,562.293h0V0h1920V247.646l-1920,314.647Z"
-      transform="translate(-144.044)"
-    />
-  </svg>
-);
+import BlueBG from "../../assets/svgs/blue.svg"
 
 
 const data = [
@@ -36,7 +19,7 @@ const Projects = () => {
   return (
     <section id="projects" className="container">
       <div className="projects__bg">
-        {BlueBG}
+        <img src={BlueBG} alt="fondo" />
       </div>
       <article className="projects__main">
         <h1>Proyectos</h1>

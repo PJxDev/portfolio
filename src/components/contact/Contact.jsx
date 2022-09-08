@@ -2,24 +2,7 @@ import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "emailjs-com";
 import { useTranslation } from "react-i18next";
-
-const BlueBG = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1920.001"
-    height="562.293"
-    viewBox="0 0 1920.001 562.293"
-    fill="#00b9ff"
-  >
-    <path
-      id="Sustracción_3"
-      data-name="Sustracción 3"
-      className="cls-1"
-      d="M144.044,562.293h0V0h1920V247.646l-1920,314.647Z"
-      transform="translate(-144.044)"
-    />
-  </svg>
-);
+import BlueBG from "../../assets/svgs/blue.svg";
 
 const Contact = () => {
   const [txt, i18n] = useTranslation("global");
@@ -75,7 +58,9 @@ const Contact = () => {
           </button>
         </form>
       </article>
-      <div className="contact__bg">{BlueBG}</div>
+      <div className="contact__bg">
+        <img src={BlueBG} alt="fondo" />
+      </div>
     </section>
   );
 };

@@ -1,6 +1,5 @@
 .show-about #about {
   opacity: 1;
-  transition: all 2s ease;
 }
 
 #about {

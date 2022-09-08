@@ -42,21 +42,28 @@ button {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .contact__bg {
   position: relative;
   bottom:-1px;
 }
-.contact__bg svg {
+
+.contact__bg img {
   position: absolute;
   z-index: -1;
-  transform: rotate(180deg);
+  rotate:180deg;
   bottom: 0rem;
-  fill: var(--color-secundary);
-  transition: var(--transition)
+}
+
+[data-theme='dark'] .contact__bg{
+  opacity: 0;
+  transition: all .5s ease;
+
 }
 
 /* MEDIA QUERIES (TABLETS) */
 @media screen and (max-width: 1024px) {
+
 }
 
 /* MEDIA QUERIES (SMARTPHONES)*/
@@ -70,11 +77,9 @@ button {
     display: flex;
     width: 15rem;
   }
-  .contact__bg {
-    bottom:27px;
+
+  .contact__bg img {
+    transform:scaleY(165%);
   }
 
-  .contact__bg svg {
-    transform: rotate(180deg) scaleY(165%);
-  }
 }
