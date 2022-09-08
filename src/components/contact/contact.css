@@ -22,18 +22,20 @@ textarea {
   margin: 1rem;
   padding: 0.5rem;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: var(--color-primary);
+  color: var(--color-font2);
   resize: none;
+  transition: var(--transition);
+
 }
 
 #contact .btn {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-element);
   color: var(--color-secundary);
 }
 
 #contact .btn:hover {
   background-color: var(--color-terciary-variant);
-  color: var(--color-bg);
+  color: var(--color-bg-element);
 }
 
 button {
@@ -44,11 +46,13 @@ button {
   position: relative;
   bottom:-1px;
 }
-.contact__bg img {
+.contact__bg svg {
   position: absolute;
   z-index: -1;
   transform: rotate(180deg);
   bottom: 0rem;
+  fill: var(--color-secundary);
+  transition: var(--transition)
 }
 
 /* MEDIA QUERIES (TABLETS) */
@@ -70,7 +74,7 @@ button {
     bottom:27px;
   }
 
-  .contact__bg img {
+  .contact__bg svg {
     transform: rotate(180deg) scaleY(165%);
   }
 }

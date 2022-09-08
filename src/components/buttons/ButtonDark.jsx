@@ -1,10 +1,11 @@
 import React from "react";
+import useLocalStorage from "use-local-storage";
 
 const MoonIcon = (
   <svg
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 16 16"
     height="2rem"
     width="2rem"
@@ -28,13 +29,23 @@ const SunIcon = (
   </svg>
 );
 
-const ButtonDark = ({ theme, setTheme }) => {
+const body = document.querySelector("body");
+const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const ButtonDark = () => {
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+
+  body.setAttribute("data-theme", `${theme}`);
+
   const swicthTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
 
-  return <a onClick={swicthTheme}> {theme === "light" ? MoonIcon : SunIcon}</a>;
+  return <a id="button__dark" onClick={swicthTheme}> {theme === "light" ? MoonIcon : SunIcon}</a>;
 };
 
 export default ButtonDark;

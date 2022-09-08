@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container footer__container">
-        <h4>{txt("footer.title")}</h4>
+        <span>{txt("footer.title")}</span>
         <FooterSocials />
       </div>
     </footer>

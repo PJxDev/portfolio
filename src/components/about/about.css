@@ -1,16 +1,23 @@
+.show-about #about {
+  opacity: 1;
+  transition: all 2s ease;
+}
+
 #about {
+  opacity: 0;
   background: var(--color-secundary);
   margin-top: 1rem;
+  transition: var(--transition);
 }
 
 .about__container {
-  color: var(--color-bg);
+  color: var(--color-bg-element);
   padding-bottom: 3rem;
 }
 
 .about__container h1 {
   text-align: center;
-  color: var(--color-bg);
+  color: var(--color-bg-element);
 }
 
 .about__main {
@@ -44,12 +51,12 @@
 }
 
 .about__button > .btn {
-  background: var(--color-bg);
+  background: var(--color-bg-element);
   color: var(--color-secundary);
 }
 
 .about__button > .btn:hover {
-  color: var(--color-bg);
+  color: var(--color-bg-element);
 }
 
 .about__button a {
@@ -60,20 +67,19 @@
 
 /* MEDIA QUERIES (TABLETS) */
 @media screen and (max-width: 1024px) {
-    .about__main {
-        flex-direction: column;
-    }
+  .about__main {
+    flex-direction: column;
+  }
 
-    .about__text{
-        font-size: 1.4rem;
-        margin: auto;
-        text-align: left;
-    }
+  .about__text {
+    font-size: 1.4rem;
+    margin: auto;
+    text-align: left;
+  }
 
-    .about__button {
-        margin-top: 3rem;
-      }
-    
+  .about__button {
+    margin-top: 3rem;
+  }
 }
 
 /* MEDIA QUERIES (SMARTPHONES)*/

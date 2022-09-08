@@ -3,6 +3,8 @@ nav {
   top: 0;
   background-color: var(--color-secundary);
   z-index: 1;
+  transition: var(--transition-fast);
+
 }
 
 .nav__container {
@@ -16,12 +18,13 @@ nav {
 
 .nav__logo {
   font-family: copper;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-element);
   border-radius: 50%;
   padding: 0.7rem 0.5rem;
   margin-left: 2rem;
   width: max-content;
-  transition: var(--transition);
+  color: var(--color-font2);
+  transition: var(--transition-fast);
 }
 
 .button__flag {
@@ -32,9 +35,25 @@ nav {
 }
 
 nav .button__flag:hover {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-element);
   padding: 0.1rem;
   border-radius: 50%;
+}
+
+nav #button__dark svg{
+  position: relative;
+  top: 0.3rem;
+  background-color: transparent;
+  border-radius: 50%;
+  transition:var(--transition-fast);
+}
+nav #button__dark svg:hover{
+  background-color: var(--color-bg-element);
+  border-radius: 50%; 
+  fill: var(--color-terciary-variant2);
+  color: var(--color-font2);
+  padding:0.1rem;
+  transition:var(--transition-fast)
 }
 
 /* Nav Menu */
@@ -43,6 +62,7 @@ nav .button__flag:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  
 }
 
 #menu-bar {
@@ -62,7 +82,7 @@ nav .button__flag:hover {
   background-color: var(--color-terciary-variant);
   display: block;
   border-radius: 5px;
-  transition: var(--transition);
+  transition: var(--transition-fast);
 }
 
 #bar1 {
@@ -81,16 +101,15 @@ nav .button__flag:hover {
   margin-left: auto;
   transition: 0.3s ease;
   position: relative;
+  
 }
 
 .nav__links a {
-  color: var(--color-bg);
+  color: var(--color-bg-element);
   font-size: 1.1rem;
-  /* font-weight: bold; */
-  /* margin: 0 1rem; */
   padding: 0.1rem;
   border-radius: 1rem;
-  transition: var(--transition);
+  transition: var(--transition-fast);
 }
 
 .links:hover {
@@ -101,7 +120,7 @@ nav .button__flag:hover {
 
 .menu-bg {
   position: absolute;
-  top: 153px;
+  top: 50px;
   right: 0;
 }
 
@@ -110,12 +129,12 @@ nav .button__flag:hover {
   width: 0;
   height: 0;
   background: radial-gradient(circle, white, var(--color-terciary));
-  transition: var(--transition);
+  transition: var(--transition-fast);
 }
 
 .change {
   display: relative;
-  transition: var(--transition);
+  transition: var(--transition-fast);
 }
 
 
@@ -131,32 +150,34 @@ nav .button__flag:hover {
   transform: translateY(-6px) rotateZ(45deg);
 }
 
+
 /* Scroll Event */
 
 .coloredNav {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-element);
   opacity: 0.9;
+  transition: var(--transition-fast);
 }
 
 .coloredLinks a {
-  color: var(--color-primary);
-  transition: all 0.3s ease;
+  color: var(--color-font2);
+  transition: var(--transition-fast);
 }
 
 .coloredLinks a:hover {
-  color: var(--color-bg);
-  transition: all 0.3s ease;
+  color: var(--color-bg-element);
+  transition: var(--transition-fast);
 }
 
 .coloredLinks #button__enflag:hover {
   background-color: var(--color-terciary-variant);
-  transition: all 0.3s ease;
+  transition: var(--transition-fast);
 }
 
 .coloredLogo {
-  color: var(--color-bg);
+  color: var(--color-bg-element);
   background: var(--color-secundary);
-  transition: all 0.3s ease;
+  transition: var(--transition-fast);
 }
 
 /* MEDIA QUERIES (TABLET) */
@@ -177,7 +198,7 @@ nav .button__flag:hover {
   }
 
   .menu-bg {
-    border-radius: 0 2rem 2rem 2rem;
+    border-radius: 0 0 2rem 2rem;
     width: 0;
     height: 21rem;
   }
@@ -193,7 +214,7 @@ nav .button__flag:hover {
   }
   
   .nav__links a{
-    color: var(--color-primary);
+    color: var(--color-font2);
   }
   
   .nav__links a:last-child{
@@ -203,6 +224,11 @@ nav .button__flag:hover {
   .change-bg {
     width: 14rem;
     height: 15rem;
-    transform: translate(37%, -43%);
+    transform: translateX(37%);
+  }
+
+  nav #button__dark svg{
+    top:-3.6rem;
+    right:-0.5rem
   }
 }

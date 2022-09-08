@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ButtonFlag from "../buttons/ButtonFlag";
 import ButtonDark from "../buttons/ButtonDark";
 import "./nav.css";
@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
   navLogo.classList.toggle("coloredLogo", window.scrollY > 800);
 });
 
-const Nav = ({ theme, setTheme }) => {
+const Nav = () => {
   const [txt, i18n] = useTranslation("global");
   const [isMenuActive, setMenutoActive] = useState(false);
 
@@ -55,7 +55,7 @@ const Nav = ({ theme, setTheme }) => {
               {txt("nav.contact")}
             </a>
             <ButtonFlag />
-            <ButtonDark theme={theme} setTheme={setTheme}/>
+            <ButtonDark />
           </div>
           <div
             className={`menu-bg ${isMenuActive ? "change-bg" : ""}`}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import Me from "../../assets/imgs/img1.jpg";
+import Me from "../../assets/imgs/img1.webp";
 import HeaderSocials from "./HeaderSocials";
 import HeaderButtons from "./HeaderButtons";
 import BackgroundSpecial from "../services/BackgroundSpecial";
@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         <div className="header__img">
           <HeaderButtons />
-          <img src={Me} alt="me" />
+          <img src={Me} loading="lazy" alt="me" />
         </div>
         <div>
           <h1>{txt("header.title-3")}</h1>

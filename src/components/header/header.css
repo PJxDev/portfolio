@@ -7,6 +7,7 @@ header {
   position: relative;
   height: 100%;
   text-align: center;
+
 }
 
 .header__socials {
@@ -37,7 +38,7 @@ header #button__github {
   transition: var(--transition);
 }
 header #button__linkedin {
-  color: rgb(15, 96, 189);
+  color:var(--color-secundary-variant);
 }
 
 header #button__linkedin:hover,
@@ -58,7 +59,6 @@ header #button__github:hover {
 .header__img img {
   grid-area: img;
   justify-items: center;
-  /* width: 20rem; */
   height: 35rem;
   border-radius: 12rem 12rem 0 0;
 }
@@ -67,6 +67,7 @@ header h3 {
   font-family: copper;
   color: var(--color-secundary);
   grid-area: h3;
+  
 }
 
 header h2 {
@@ -134,7 +135,7 @@ header h1 {
 }
 
 .background__icons svg path{
-  fill: var(--color-bg);
+  fill: var(--color-bg-element);
 }
 .background__icons svg circle{
   fill: var(--color-terciary);
