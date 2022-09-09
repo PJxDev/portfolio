@@ -17,7 +17,7 @@ nav {
 }
 
 .nav__logo {
-  font-family: copper;
+  font-family: copper, sans-serif;
   background-color: var(--color-bg-element);
   border-radius: 50%;
   padding: 0.7rem 0.5rem;
@@ -40,7 +40,7 @@ nav .button__flag:hover {
   border-radius: 50%;
 }
 
-nav #button__dark svg{
+nav #button__dark{
   position: relative;
   top: 0.3rem;
   background-color: transparent;
@@ -128,7 +128,7 @@ nav #button__dark svg:hover{
   z-index: -1;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, white, var(--color-terciary));
+  background: radial-gradient(circle, var(--color-bg-element), var(--color-terciary));
   transition: var(--transition-fast);
 }
 
@@ -227,7 +227,7 @@ nav #button__dark svg:hover{
     transform: translateX(37%);
   }
 
-  nav #button__dark svg{
+  nav #button__dark{
     top:-3.6rem;
     right:-0.5rem
   }

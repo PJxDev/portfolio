@@ -1,4 +1,6 @@
 import React from "react";
+import {useTranslation} from "react-i18next"
+  
 
 const ProjectBox = ({
   id,
@@ -7,6 +9,9 @@ const ProjectBox = ({
   link,
   description,
 }) => {
+
+  const [txt, i18n] = useTranslation("global")
+  
   return (
     <div key={id} className="projects__box">
       <img src={image} alt={title} />

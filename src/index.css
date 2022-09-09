@@ -36,7 +36,7 @@
   --color-primary: #fefefe;
   --color-secundary: #007295;
   --color-secundary-variant: #fefefe;
-  --color-terciary: #9198ab;
+  --color-terciary: #6c858d;
   --color-terciary-variant: #9e9a68;
   --color-terciary-variant2: #e91e63;
 
@@ -84,7 +84,7 @@ h5 {
 }
 
 h1 {
-  font-family: copper;
+  font-family: copper, sans-serif;
   font-size: 3.5rem;
   color: var(--color-secundary);
 }
@@ -114,6 +114,7 @@ a {
   cursor: pointer;
   border: 1px solid transparent;
   transition: var(--transition);
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
 

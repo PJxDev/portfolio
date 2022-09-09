@@ -14,6 +14,15 @@
   margin-top: 2rem;
 }
 
+:is(input, textarea)::placeholder {
+  color: rgb(67, 68, 82);
+  font-weight: normal;
+}
+
+input{
+  font-weight: bold;
+}
+
 input,
 textarea {
   background-color: var(--color-terciary);
@@ -21,7 +30,7 @@ textarea {
   font-size: 1rem;
   margin: 1rem;
   padding: 0.5rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family:"Poppins", sans-serif;
   color: var(--color-font2);
   resize: none;
   transition: var(--transition);
@@ -31,6 +40,7 @@ textarea {
 #contact .btn {
   background-color: var(--color-bg-element);
   color: var(--color-secundary);
+  font-size: 1rem;
 }
 
 #contact .btn:hover {
@@ -38,10 +48,6 @@ textarea {
   color: var(--color-bg-element);
 }
 
-button {
-  font-size: 1rem;
-  font-weight: 500;
-}
 
 .contact__bg {
   position: relative;

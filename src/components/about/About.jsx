@@ -26,34 +26,36 @@ const About = () => {
   );
 };
 
-export default function LazyAbout() {
-  const [show, setShow] = useState(false);
-  const elementRef = useRef();
+export default About
 
-  useEffect(function() {
-    console.log(show, 'show');
+// export default function LazyAbout() {
+//   const [show, setShow] = useState(false);
+//   const elementRef = useRef();
 
-    const onChange = (entries, observer) => {
-      const el = entries[0];
-      if (el.isIntersecting) {
-        setShow(true);
-        observer.disconnect();
-      }
-    };
+//   useEffect(function() {
+//     console.log(show, 'show');
 
-    const observer = new IntersectionObserver(onChange, {
-      rootMargin: "0px",
-      threshold: 0.5
-    });
+//     const onChange = (entries, observer) => {
+//       const el = entries[0];
+//       if (el.isIntersecting) {
+//         setShow(true);
+//         observer.disconnect();
+//       }
+//     };
 
-    observer.observe(elementRef.current);
+//     const observer = new IntersectionObserver(onChange, {
+//       rootMargin: "0px",
+//       threshold: 0.5
+//     });
 
-    return () => observer.disconnect();
-  });
+//     observer.observe(elementRef.current);
 
-  return (
-    <div className={`${show ? "show-about" : ""}`} ref={elementRef}>
-      <About />
-    </div>
-  );
-}
+//     return () => observer.disconnect();
+//   });
+
+//   return (
+//     <div className={`${show ? "show-about" : ""}`} ref={elementRef}>
+//       <About />
+//     </div>
+//   );
+// }

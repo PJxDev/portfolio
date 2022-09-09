@@ -1,20 +1,26 @@
-header {
+#header {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: center;
+  min-height: 93vh;
+}
+
+header section:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .header__container {
   position: relative;
   height: 100%;
   text-align: center;
-  top:-3rem;
-
 }
 
 .header__socials {
   font-size: 2rem;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: row;
   grid-area: socials;
@@ -22,7 +28,6 @@ header {
   justify-content: flex-end;
   gap: 0.8rem;
   right: 10rem;
-  top: 0.3rem;
 }
 
 .header__buttons {
@@ -40,7 +45,7 @@ header #button__github {
   transition: var(--transition);
 }
 header #button__linkedin {
-  color:var(--color-secundary-variant);
+  color: var(--color-secundary-variant);
 }
 
 header #button__linkedin:hover,
@@ -63,13 +68,13 @@ header #button__github:hover {
   justify-items: center;
   height: 35rem;
   border-radius: 12rem 12rem 0 0;
+  z-index: 0;
 }
 
 header h3 {
-  font-family: copper;
+  font-family: copper, sans-serif;
   color: var(--color-secundary);
   grid-area: h3;
-  
 }
 
 header h2 {
@@ -94,59 +99,55 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
-  top: 51rem;
   transition: all 1s ease;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 .background__icon {
   color: var(--color-terciary);
-  position: absolute;
+  padding: 0rem 1rem;
 }
 
 #BGicon__1 {
-  left: -38rem;
-  top: 2rem;
   transform: rotateZ(-30deg);
-  animation: bg_special 7s ease-in 2s infinite;
+  animation: bg_special 10s ease-in-out 2s infinite;
   opacity: 0;
 }
 
 #BGicon__2 {
-  left: -21rem;
-  top: -2rem;
   opacity: 0;
   transform: rotateZ(-10deg);
-  animation: bg_special 7s ease-in infinite;
+  animation: bg_special 10s ease-in-out infinite;
+  transform: translateY(2rem);
 }
 
 #BGicon__3 {
-  left: 14rem;
-  top: -3rem;
   opacity: 0;
-  animation: bg_special 7s ease-in 3s infinite;
+  animation: bg_special 10s ease-in-out 3s infinite;
   transform: rotateZ(10deg);
+  transform: translateY(-1rem);
 }
 
 #BGicon__4 {
-  left: 30rem;
-  top: 1rem;
   opacity: 0;
-  animation: bg_special 7s ease-in 1s infinite;
+  animation: bg_special 10s ease-in-out 1s infinite;
   transform: rotateZ(30deg);
+  transform: translateY(-4rem);
 }
 
-.background__icons svg path{
+.background__icons svg path {
   fill: var(--color-bg-element);
 }
-.background__icons svg circle{
+.background__icons svg circle {
   fill: var(--color-terciary);
 }
-.background__icons #astroIcon-2{
+.background__icons #astroIcon-2 {
   fill: var(--color-terciary);
 }
 
-.background__icons svg path:first-child{
+.background__icons svg path:first-child {
   fill: var(--color-terciary);
 }
 
@@ -163,15 +164,25 @@ header h1 {
     opacity: 0.75;
   }
   100% {
-    top: -39rem;
     opacity: 0;
     transform: rotateZ(0deg);
+    transform: translateY(-50rem);
   }
 }
 
 /* MEDIA QUERIES (TABLET) */
 
 @media screen and (max-width: 1024px) {
+  header section:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+
+  .header__socials {
+    position: static;
+  }
   .header__container {
     grid-template:
       "h3 socials"
@@ -179,18 +190,21 @@ header h1 {
       ". img"
       ". btn"
       ". h1";
-    top:0;
+    top: 0;
   }
 
   .header__img {
+    position: static;
     flex-direction: column-reverse;
     align-items: center;
     gap: 0;
-    right: 0;
+    width: inherit;
   }
 
   .header__buttons {
     flex-direction: row;
+    flex-wrap: wrap;
+    width: inherit;
   }
 }
 
@@ -198,13 +212,17 @@ header h1 {
 @media screen and (max-width: 600px) {
   header {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     margin-left: 0;
     margin: 0 auto;
   }
 
-  .background__icons{
+  header section:first-child {
+    flex-direction: column-reverse;
+  }
+
+  .background__icons {
     display: none;
   }
 
@@ -221,6 +239,7 @@ header h1 {
   .header__img img {
     display: flex;
     object-fit: cover;
+    height: auto;
   }
 
   header h1 {
@@ -231,6 +250,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 2rem;
   }
 
   #title__hided {

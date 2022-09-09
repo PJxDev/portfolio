@@ -1,9 +1,9 @@
-.show-about #about {
+/* .show-about #about {
   opacity: 1;
-}
+} */
 
 #about {
-  opacity: 0;
+  /* opacity: 0; */
   background: var(--color-secundary);
   margin-top: 1rem;
   transition: var(--transition);

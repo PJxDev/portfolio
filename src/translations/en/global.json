@@ -14,8 +14,16 @@
 
   "about": {
     "title": "About me",
-    "bio-1": "I was born in Málaga with two passions: Playing music and typing code",
-    "bio-2": "Nowadays, I inmerse in a degree where I'm studying developing web apps, while at the same time, I'm researching and learning for new features and tecnologies that can help me in my journey"
+    "bio-1": "I'm from Malaga and i have two passions in my life: Playing music and typing code.",
+    "bio-2": "Nowadays, I'm inmerse in a degree where I'm studying developing web apps, while at the same time, I'm researching and learning for new features and tecnologies that can help me in my journey."
+  },
+
+  "projects": {
+    "title": "Projects",
+    "box-1-title": "Pong Game!",
+    "box-1-desc": "Game developped with JavaScript",
+    "box-2-title": "Cats gifs and facts",
+    "box-2-desc": "App that related gifs to cat's facts"
   },
 
   "tecnologies": {
