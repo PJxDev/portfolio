@@ -27,35 +27,3 @@ const About = () => {
 };
 
 export default About
-
-// export default function LazyAbout() {
-//   const [show, setShow] = useState(false);
-//   const elementRef = useRef();
-
-//   useEffect(function() {
-//     console.log(show, 'show');
-
-//     const onChange = (entries, observer) => {
-//       const el = entries[0];
-//       if (el.isIntersecting) {
-//         setShow(true);
-//         observer.disconnect();
-//       }
-//     };
-
-//     const observer = new IntersectionObserver(onChange, {
-//       rootMargin: "0px",
-//       threshold: 0.5
-//     });
-
-//     observer.observe(elementRef.current);
-
-//     return () => observer.disconnect();
-//   });
-
-//   return (
-//     <div className={`${show ? "show-about" : ""}`} ref={elementRef}>
-//       <About />
-//     </div>
-//   );
-// }

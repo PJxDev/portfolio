@@ -17,6 +17,7 @@ const Projects = () => {
       title: `${txt(`projects.box-${i}-title`)}`,
       description: `${txt(`projects.box-${i}-desc`)}`,
       link: `${txt(`projects.box-${i}-link`)}`,
+      github: `${txt(`projects.box-${i}-github`)}`,
       image: `${txt(`projects.box-${i}-image`)}`,
     }
     data[i] = el
@@ -31,7 +32,7 @@ const Projects = () => {
         <h1>{txt("projects.title")}</h1>
         <div className="projects__boxes">
           {
-          data.map(({ id, title, description, img, link }) => {
+          data.map(({ id, title, description, img, link, github}) => {
             return (
               <ProjectBox
                 key={id}
@@ -39,6 +40,7 @@ const Projects = () => {
                 img={img}
                 description={description}
                 link={link}
+                github={github}
               />
             );
           })}

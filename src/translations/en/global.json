@@ -23,9 +23,11 @@
     "box-1-title": "Pong Game!",
     "box-1-desc": "Game developped with JavaScript",
     "box-1-link": "https://pong-game-pjxdev.vercel.app/",
+    "box-1-github": "https://github.com/PJxDev/pong-game",
     "box-2-title": "Gifs, Cats and facts",
     "box-2-desc": "App that related gifs to cat's facts",
-    "box-2-link": "https://gifs-cats-and-facts.vercel.app/"
+    "box-2-link": "https://gifs-cats-and-facts.vercel.app/",
+    "box-2-github": "https://github.com/PJxDev/gifs-cats-and-facts"
   },
 
   "tecnologies": {
