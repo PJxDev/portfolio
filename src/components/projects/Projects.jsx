@@ -13,8 +13,11 @@ const Projects = () => {
   for (let i=1;i<=2;i++){
     let el = {
       id: i,
+      img: i-1,
       title: `${txt(`projects.box-${i}-title`)}`,
-      description: `${txt(`projects.box-${i}-desc`)}`
+      description: `${txt(`projects.box-${i}-desc`)}`,
+      link: `${txt(`projects.box-${i}-link`)}`,
+      image: `${txt(`projects.box-${i}-image`)}`,
     }
     data[i] = el
   }
@@ -28,21 +31,17 @@ const Projects = () => {
         <h1>{txt("projects.title")}</h1>
         <div className="projects__boxes">
           {
-          data.map(({ id, title, description, image, link }) => {
+          data.map(({ id, title, description, img, link }) => {
             return (
               <ProjectBox
                 key={id}
                 title={title}
+                img={img}
                 description={description}
-                image={image}
                 link={link}
               />
             );
           })}
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
         </div>
       </article>
     </section>

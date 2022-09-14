@@ -1,11 +1,13 @@
 import React from "react";
 import {useTranslation} from "react-i18next"
+import img1 from "../../assets/imgs/project-pong.webp"
+import img2 from "../../assets/imgs/project-cats.webp"
   
-
+const images = [img1, img2]
 const ProjectBox = ({
   id,
   title,
-  image = "https://www.kalypsofarms.com/wp-content/uploads/2019/08/dummy-300x207.png",
+  img,
   link,
   description,
 }) => {
@@ -14,17 +16,17 @@ const ProjectBox = ({
   
   return (
     <div key={id} className="projects__box">
-      <img src={image} alt={title} />
 
-      {link ? (
-        <a href={link}>
-          <h3>{title}</h3>
-        </a>
-      ) : (
-        <h3>{title}</h3>
+        <img src={images[img]} alt={title} />
+      
+      <h3>{title}</h3>
+      <span>{description}</span>
+      
+      {link && (
+        <a href={link} target="_blank">
+        demo</a>
       )}
       
-      <span>{description}</span>
     </div>
   );
 };
